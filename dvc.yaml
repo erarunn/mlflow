@@ -2,7 +2,7 @@ stages:
   data_split:
     cmd: python src/data_split.py data/data.csv
     deps:
-    - data_source.local_path
+    - Raw_data/dataset_main_red_wine.csv
     - src/data_split.py
     params:
     - base.random_state
